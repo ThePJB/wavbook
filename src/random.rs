@@ -23,7 +23,7 @@ pub fn fade(t: f32) -> f32 {
 // can provide analytical gradient pretty easily
 // can you influence the vectors and stuff in octaves?
 // possibility of hyper optimizations
-// eg u64 hash, or optimization of rng bits. dont need as many, like if we were selcting from 8directions. can also do shitty 0-1 0-1 and normalize unit vectors. or not bother
+// eg u64 hash, or optimization of rng bits. dont need as many, like if we were selcting from 8directions. can also do stuffty 0-1 0-1 and normalize unit vectors. or not bother
 pub fn noise_grad(p: Vec2, seed: u32) -> f32 {
     // grid corners get a random vector
     // blend the vectors
